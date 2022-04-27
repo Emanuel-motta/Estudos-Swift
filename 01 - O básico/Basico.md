@@ -28,8 +28,10 @@ O uso de constantes no Swift é muito mais poderoso do que em C. Usadas em todo 
 
 Exemplo:
 
-    let maximumNumberOfLoginAttempts = 10
-    var currentLoginAttempt = 0
+~~~ Swift
+let maximumNumberOfLoginAttempts = 10
+var currentLoginAttempt = 0
+~~~
 
 Esse trecho de código pode ser lido como: 
 
@@ -39,8 +41,10 @@ Note que, o máximo de tentativas de login permitidas é declarado como constant
 
 É possível declarar várias constantes e variáveis em uma única linha. Veja abaixo:
 
-    var x = 0.0, y = 0.0, z = 0.0
-    
+~~~ Swift
+var x = 0.0, y = 0.0, z = 0.0
+~~~
+
 > **Observaçao**
 >
 > Se um valor armazenado em seu código nao mudar, sempre o declare como ***let*** (Constante). Use variáveis apenas para armazenar valores que serao alterados.
@@ -53,18 +57,23 @@ Voce pode fornecer *anotaçoes de tipo* ao declarar uma constante ou variável, 
 
 Este exemplo fornece uma anotaçao de tipo para uma variavel chamada *welcomeMessage*, para indicar que ela pode armazenar *Strings* 
 
-    var welcomeMessage: String
+~~~ Swift
+var welcomeMessage: String
+~~~
 
 Os dois pontos significam "... do tipo ...". Pense nisso como "o tipo de coisa" que pode ser armazenado.
 
 A *welcomeMessage* variável agora pode ser definida para qualquer valor de string sem erro: 
 
-    welcomeMessage = "Hello"
+~~~ Swift
+welcomeMessage = "Hello"
+~~~
 
 Voce pode definir várias variáveis relacionadas do mesmo tipo em uma única linha: 
 
-    var red, green, blue: Double
-
+~~~ Swift
+var red, green, blue: Double
+~~~
 > **Observaçao**
 >
 > É raro que voce precise escrever anotaçoes de tipo na prática. Ao voce fornecer uma valor inicial para uma constante ou uma variável no ponto de definiçao, o Swift quase sempre pode inferir o tipo a ser usado.
@@ -75,9 +84,11 @@ Voce pode definir várias variáveis relacionadas do mesmo tipo em uma única li
 
 Nomes de constantes e veriáveis podem conter quase qualquer caractere, incluindo carcteres unicode:
 
-    let π = 3.14159
-    let 你好 = "你好世界"
-    let 🐶🐮 = "dogcow"
+~~~ Swift
+let π = 3.14159
+let 你好 = "你好世界"
+let 🐶🐮 = "dogcow"
+~~~
 
 Os nomes nao podem conter caracteres de espaço em branco, símbolos matemáticos, setas, valores escalares Unicode de uso privado ou caracteres de desenho de linha de caixa.
 
@@ -90,31 +101,38 @@ Após a declaraçao de uma constante ou uma variável, voce nao pode declará-la
 
 Voce pode alterar o valor de uma variável existente para outro valor de um tipo compátivel.
 
+~~~ Swift
     var friendlyWelcome = "Hello !!"
     friendlyWelcome = "Bonjour !!"
     // friendlyWelcome is now "Bonjour !"
+~~~
 
 Ao contrário de uma variável, o valor de uma constante nao pode ser alterado depois de definido.
 
-    let languageName = "Swift"
-    languageName = "Swift++"
-    // This is a compile-time error: languageName cannot be changed
-
+ ~~~ Swift
+let languageName = "Swift"
+languageName = "Swift++"
+// This is a compile-time error: languageName cannot be changed
+~~~
 
 &nbsp;
 ## **Imprimindo Constantes e Variáveis**
 
 Voce pode imprimir o valor atual de uma constante ou variável com a funçao:
 
-    print(friendlyWelcome)
-    // Prints "Bonjour!"
+~~~ Swift
+print(friendlyWelcome)
+// Prints "Bonjour!"
+~~~
 
 A ***print(_:separator:terminator:)*** é uma funçao global que imprime um ou mais valores em uma saida apropriada. No Xcode, por exemplo, a funçao imprime sua saída no console. 
 
 O Swift usa a ***interpolacao de strings*** para incluir o nome de uma constante ou variável como um espaço reservado de uma string. Basta colocar o nome entre parenteses e escape com uma barra invertida antes do parentese: 
 
-    print ("The current value of friendlyWelcome is \(friendlyWelcome)")
-    // Prints "The current value of friendlyWelcome is Bonjour !"
+~~~ Swift
+print ("The current value of friendlyWelcome is \(friendlyWelcome)")
+// Prints "The current value of friendlyWelcome is Bonjour !"
+~~~
 
 &nbsp;
 # **Comentários**
@@ -123,20 +141,26 @@ O Swift usa a ***interpolacao de strings*** para incluir o nome de uma constante
 
 Comentários em Swift sao muito semelhantes aos comentarios em C. Comentários de linha única começam com duas barras (//):
 
-    // This is a comment.
+~~~ Swift
+// This is a comment.
+~~~
 
 Comentários de várias linhas começam com uma barra seguida de asterisco (/*) e terminam com um asterisco seguido de uma barra (*/):
 
-     /* This is also a comment
-     but is written over multiple lines. */
+~~~ Swift
+ /* This is also a comment
+ but is written over multiple lines. */
+~~~
 
 &nbsp;
 # **Ponto e Vírgula**
 
 Ao contrário de muitas outras linguagens, o Swift nao exige que voce escreva um ponto e virgula (;) após cada instruçao em seu código. No entanto, os pontos e vírgulas dao necessarios se voce quiser escrever varias instruçoes separadas:
 
-    let cat = "Miau"; Print(cat)
-    // Prints "Miau"
+~~~ Swift
+let cat = "Miau"; Print(cat)
+// Prints "Miau"
+~~~
 
 &nbsp;
 # **Inteiros**
@@ -148,8 +172,10 @@ Ao contrário de muitas outras linguagens, o Swift nao exige que voce escreva um
 
 Voce pode acessar os valores minimo e maximo de cada tipo inteiro com seus propriedades ***min*** e ***max***:
 
-    let minValue = UInt8.min // minValue is equal to 0, and is of type UInt8 
-    let maxValue = UInt8.max // maxValue is equal to 255, and is of type UInt8
+~~~Swift
+let minValue = UInt8.min // minValue is equal to 0, and is of type UInt8 
+let maxValue = UInt8.max // maxValue is equal to 255, and is of type UInt8
+~~~
 
 Os valores dessas propriedades sao do tipo numerico de tamanho apropriado e, portanto, podem ser usados em expressoes junto com outros valores do mesmo tipo.
 
@@ -171,7 +197,9 @@ Swift também fornece um tipo inteiro sem sinal, ***UInt***, que tem o mesmo tam
 - Em uma plataforma de 64 bits, ***UInt*** é do mesmo tamanho que ***UInt64***.
 
 > **Observaçao**
+>
 > Use ***UInt*** somente quando precisar especificamente de um tipo inteiro sem sinal com o mesmo tamanho da palavra nativa da plataforma. Se este nao for o caso, opte sempre pelo uso do ***Int***, um uso consistente de ***Int*** para valores inteiros ajuda a interoperabilidade do código, evita a necessidade de conversao. 
+>
 
 &nbsp;
 # **Números de ponto flutuante**
