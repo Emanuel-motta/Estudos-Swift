@@ -82,7 +82,7 @@ var red, green, blue: Double
 &nbsp;
 ## **Nomenclatura de constantes e variáveis**
 
-Nomes de constantes e veriáveis podem conter quase qualquer caractere, incluindo carcteres unicode:
+Nomes de constantes e variáveis podem conter quase qualquer caractere, incluindo carcteres unicode:
 
 ~~~ Swift
 let π = 3.14159
