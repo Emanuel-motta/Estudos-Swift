@@ -127,7 +127,7 @@ print(friendlyWelcome)
 
 A ***print(_:separator:terminator:)*** é uma funçao global que imprime um ou mais valores em uma saida apropriada. No Xcode, por exemplo, a funçao imprime sua saída no console. 
 
-O Swift usa a ***interpolacao de strings*** para incluir o nome de uma constante ou variável como um espaço reservado de uma string. Basta colocar o nome entre parenteses e escape com uma barra invertida antes do parentese: 
+O Swift usa a ***interpolaçao de strings*** para incluir o nome de uma constante ou variável como um espaço reservado de uma string. Basta colocar o nome entre parenteses e escape com uma barra invertida antes do parentese: 
 
 ~~~ Swift
 print ("The current value of friendlyWelcome is \(friendlyWelcome)")
@@ -155,7 +155,7 @@ Comentários de várias linhas começam com uma barra seguida de asterisco (/*) 
 &nbsp;
 # **Ponto e Vírgula**
 
-Ao contrário de muitas outras linguagens, o Swift nao exige que voce escreva um ponto e virgula (;) após cada instruçao em seu código. No entanto, os pontos e vírgulas dao necessarios se voce quiser escrever varias instruçoes separadas:
+Ao contrário de muitas outras linguagens, o Swift nao exige que voce escreva um ponto e virgula (;) após cada instruçao em seu código. No entanto, os pontos e vírgulas sao necessarios se voce quiser escrever varias instruçoes separadas:
 
 ~~~ Swift
 let cat = "Miau"; Print(cat)
@@ -165,7 +165,7 @@ let cat = "Miau"; Print(cat)
 &nbsp;
 # **Inteiros**
 
->Os ***inteiros*** sao numeros inteiros sem componentes fracionário, como ***42*** e ***-23***. Os inteiros sao com ***sinal*** (positivo, zero ou negativo) ou ***sem sinal*** (positivo ou zero). 
+>Os ***inteiros*** sao numeros sem componentes fracionário, como ***42*** e ***-23***. Os inteiros sao com ***sinal*** (positivo, zero ou negativo) ou ***sem sinal*** (positivo ou zero). 
 
 &nbsp;
 ## **Limites Inteiros**
