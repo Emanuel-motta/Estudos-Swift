@@ -96,7 +96,7 @@ Após a declaraçao de uma constante ou uma variável, voce nao pode declará-la
 
 > **Oservaçao**
 >
-> Se voce precisar dar a uma constante ou variável o memso nome de uma palavra-chave reservada do Swift, coloque a palavra-chave com acentos graves (´) ao usá-la como um nome. No Entanto, evite usar palavras-chave como nomes, a menos que voce nao tenha escolha.
+> Se voce precisar dar a uma constante ou variável o mesmo nome de uma palavra-chave reservada do Swift, coloque a palavra-chave com acentos graves (´) ao usá-la como um nome. No Entanto, evite usar palavras-chave como nomes, a menos que voce nao tenha escolha.
 >
 
 Voce pode alterar o valor de uma variável existente para outro valor de um tipo compátivel.
