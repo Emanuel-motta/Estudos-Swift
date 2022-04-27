@@ -92,7 +92,7 @@ let 🐶🐮 = "dogcow"
 
 Os nomes nao podem conter caracteres de espaço em branco, símbolos matemáticos, setas, valores escalares Unicode de uso privado ou caracteres de desenho de linha de caixa.
 
-Após a declaraçao de uma constante ou uma variável, voce nao pode declará-la novamente com o mesmo nome ou alterá-lla para armazenar valores de um tipo diferente
+Após a declaraçao de uma constante ou uma variável, voce nao pode declará-la novamente com o mesmo nome ou alterá-la para armazenar valores de um tipo diferente
 
 > **Oservaçao**
 >
