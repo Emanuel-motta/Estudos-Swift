@@ -216,3 +216,45 @@ Os tipos de ponto flutuante pode representar um intervalo de valores muito maior
 > ***Double*** tem uma precisao de pelo menos 15 dígitos decimais, enquanto a precisao de ***Float*** pode ser 6 dígitos decimais. O tipo de ponto flutuante apropriado a ser usado depende da natureza e do intervalo de valores com os quais voce precisa trabalhar em seu código. Em situaçoes onde qualquer tipo seria apropriado, ***Double*** é preferível.
 >
 
+&nbsp;
+# **Segurança de tipo e Inferencia de tipo**
+
+Como dito anteriormente, Swift é uma linguagem de *tipo seguro*. O que significa que voce tem que ser claro sobre os tipos de valores no qual voce utiliza em seu codigo, se uma parte requerer *String* voce nao pode passa-la como *Int*. 
+
+Sao executadas *verificaçoes de tipo* ao compilar o código para sinalizar quaisquer tipo incompatível. Sendo assim, mais facil a detecçao e correçao de erros.
+
+Essa *verificaçao de tipo* facilita o trabalho com diferentes tipos de valores. Sendo desnecessario a especificaçao do tipo de cada variável ou constante. O Swift por si só realiza a *inferencia de tipo* para assimilar o tipo apropriado para cada constante ou variável, examinando os valores fornecidos.
+
+> Devido a *inferencia de tipo*, Swift requer poucas declaraçoes de tipo. 
+>
+> Constantes e variáveis sao explicitamente tipadas, mas muito do trabalho já é feito para voce.
+
+A *inferencia de tipo* é útil quando se declara uma constante ou variável com um valor inicial. Isso ocorre quando é atribuido um valor *Literal* a constante ou variável 
+
+> Um valor *literal* é um valor que aparece direto no código fonte.
+
+Por exemplo: 
+
+~~~Swift
+let meaningOfLife = 42
+// meaningOfLife is inferred to be of type Int
+~~~
+
+Da mesma forma se voce nao especificar um tipo para um literal de *Ponto Flutuante*, o Swift SEMPRE deduzirá como sendo um *Double* em vez de *Float* 
+
+~~~Swift
+let pi = 3.14159
+// pi is inferred to be of type Double
+~~~
+
+Se voce combinar literais inteiros e de ponto flutuante em uma expressao essa regra se mantem, e o tipo inferido sera *Double*
+
+~~~Swift
+let anotherPi = 3 + 0.14159
+// anotherPi is also inferred to be type Double
+~~~
+
+&nbsp;
+# **Literais Numéricos**
+
+
