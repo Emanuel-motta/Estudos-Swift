@@ -255,6 +255,31 @@ let anotherPi = 3 + 0.14159
 ~~~
 
 &nbsp;
-# **Literais Numéricos**
+# **Alias de Tipo**
 
+> Os *aliases* de tipo definem um nome alernativo para um tipo existente. Voce define aliases de tipo com a palavra chave ***typealias***
 
+~~~Swift
+typealias AudioSample = UInt16
+~~~
+
+Depois de definir um alias de tipo, voce pode usar o alias em qualquer lugar em que possa usar o nome original
+
+~~~Swift
+var maxAmplitudeFound = AudioSample.min
+// maxAmplitudeFound is now 0
+~~~
+
+Aqui, *AudioSample* é definico como um alias para *UInt16*. Por ser um alias, a chamada para *AudioSample.min* realmente chama *UInt16.min*, que fornece um valor inicial de 0 para a *maxAmplitudeFound* variável.
+
+&nbsp;
+# **Booleanos**
+
+Swift tem um tipo Booleano básico, chamado ***Bool***. Os valores booleanos sao chamados de lógicos, porque eles só podem ser verdadeiros ou falsos. Swift fornece dois valores de constantes booleanas *true* e *false* :
+
+~~~Swift
+let orangesAreOrange = true
+let turnipsAreDelicious = false
+~~~
+
+Os dois valores foram inferidos como *Bool* a partir do momento em que foram incializados como valores literais booleanos. 
